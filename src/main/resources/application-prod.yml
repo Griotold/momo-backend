@@ -1,0 +1,48 @@
+spring:
+  datasource:
+    url: ${DB_URL}
+    driver-class-name: org.postgresql.Driver
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: validate  # 운영에서는 스키마 변경 금지
+    show-sql: false       # 운영에서는 SQL 로그 비활성화
+    properties:
+      hibernate:
+        format_sql: false # 운영에서는 포맷팅 비활성화
+        use_sql_comments: false
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        query:
+          in_clause_parameter_padding: true
+        default_batch_fetch_size: 100
+    open-in-view: false
+
+application:
+  security:
+    jwt:
+      secret-key: ${JWT_SECRET_KEY}
+      expiration: ${JWT_EXPIRATION:3600000}
+      refresh-token:
+        expiration: ${JWT_REFRESH_EXPIRATION:2592000000}
+
+logging:
+  level:
+    root: INFO
+    com.momo.backend: INFO
+    org.springframework.security: WARN
+    org.hibernate: WARN
+  pattern:
+    console: "%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"
+  file:
+    name: logs/momo-backend.log
+  logback:
+    rollingpolicy:
+      max-file-size: 100MB    # max-size → max-file-size
+      max-history: 30
+
+server:
+  error:
+    include-stacktrace: never    # 운영에서는 스택트레이스 숨김
+    include-message: never       # 에러 메시지도 숨김

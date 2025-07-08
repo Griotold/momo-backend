@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: momo-backend
+  profiles:
+    default: dev
