@@ -23,7 +23,7 @@ import java.util.List;
 
 import static io.swagger.v3.oas.annotations.enums.ParameterIn.HEADER;
 
-@Tag(name = "사용자 컨트롤러", description = "사용자 정보 관리 API")
+@Tag(name = "사용자 컨트롤러", description = "사용자 정보 관리 API - 인증 필요")
 @Slf4j
 @RequiredArgsConstructor
 @RequestMapping("/api/v1/users")
