@@ -30,6 +30,6 @@ public class SwaggerConfig implements WebMvcConfigurer {
         return new Info()
                 .title("Momo Backend API")
                 .description("Momo 프로젝트 백엔드 API 문서 (Mock 버전)")
-                .version("1.0.0");
+                .version("0.0.1");
     }
 }
