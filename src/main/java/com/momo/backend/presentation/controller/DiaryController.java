@@ -2,12 +2,12 @@ package com.momo.backend.presentation.controller;
 
 import com.momo.backend.common.dto.BaseResponse;
 import com.momo.backend.common.dto.PaginationInfo;
-import com.momo.backend.presentation.dto.request.DiaryCreateRequest;
-import com.momo.backend.presentation.dto.request.DiaryUpdateRequest;
-import com.momo.backend.presentation.dto.response.DiaryCalendarResponse;
-import com.momo.backend.presentation.dto.response.DiaryCreateResponse;
-import com.momo.backend.presentation.dto.response.DiaryInfo;
-import com.momo.backend.presentation.dto.response.DiaryListResponse;
+import com.momo.backend.presentation.dto.diary.request.DiaryCreateRequest;
+import com.momo.backend.presentation.dto.diary.request.DiaryUpdateRequest;
+import com.momo.backend.presentation.dto.diary.response.DiaryCalendarResponse;
+import com.momo.backend.presentation.dto.diary.response.DiaryCreateResponse;
+import com.momo.backend.presentation.dto.diary.response.DiaryInfo;
+import com.momo.backend.presentation.dto.diary.response.DiaryListResponse;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.Parameters;

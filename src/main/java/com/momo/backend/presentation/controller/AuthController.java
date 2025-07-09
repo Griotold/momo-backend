@@ -1,16 +1,14 @@
 package com.momo.backend.presentation.controller;
 
 import com.momo.backend.common.dto.BaseResponse;
-import com.momo.backend.presentation.dto.request.KakaoLoginRequest;
-import com.momo.backend.presentation.dto.request.RefreshTokenRequest;
-import com.momo.backend.presentation.dto.request.UserWithdrawRequest;
-import com.momo.backend.presentation.dto.response.KakaoLoginResponse;
-import com.momo.backend.presentation.dto.response.RefreshTokenResponse;
+import com.momo.backend.presentation.dto.auth.request.KakaoLoginRequest;
+import com.momo.backend.presentation.dto.auth.request.RefreshTokenRequest;
+import com.momo.backend.presentation.dto.auth.response.KakaoLoginResponse;
+import com.momo.backend.presentation.dto.auth.response.RefreshTokenResponse;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.Parameters;
 import io.swagger.v3.oas.annotations.media.Content;
-import io.swagger.v3.oas.annotations.media.ExampleObject;
 import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;

@@ -1,8 +1,7 @@
-package com.momo.backend.presentation.dto.request;
+package com.momo.backend.presentation.dto.diary.request;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
 
 @Schema(description = "감정 일기 작성 요청")
 public record DiaryCreateRequest(

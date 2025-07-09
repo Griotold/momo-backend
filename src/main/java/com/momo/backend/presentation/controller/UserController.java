@@ -1,8 +1,8 @@
 package com.momo.backend.presentation.controller;
 
 import com.momo.backend.common.dto.BaseResponse;
-import com.momo.backend.presentation.dto.request.UserWithdrawRequest;
-import com.momo.backend.presentation.dto.response.UserInfoResponse;
+import com.momo.backend.presentation.dto.user.request.UserWithdrawRequest;
+import com.momo.backend.presentation.dto.user.response.UserInfoResponse;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.Parameters;

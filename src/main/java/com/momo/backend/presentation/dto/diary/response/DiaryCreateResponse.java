@@ -1,4 +1,4 @@
-package com.momo.backend.presentation.dto.response;
+package com.momo.backend.presentation.dto.diary.response;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import java.time.LocalDate;
